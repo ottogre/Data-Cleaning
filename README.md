@@ -25,11 +25,13 @@ Clean Data:
   - Show an understanding of looking for and correcting errors in the dataset.
 
 
+
 ## ***Importing Data***
 
 To get started I Imported WorldLifeExpectancy.csv dataset to MySQL creating a schema named ‘world_life_expectancy.csv’. Then I imported the WorldLifeExpectancy.csv as second time and listed it as world_life_expectancy_staging as a control table.
 
 ![alt text](Dataset1.0.png)
+
 
 
 ## ***Duplicates***
@@ -45,3 +47,11 @@ Next, I needed to find the location to do duplicates and remove them from the da
 
 
 To remove the identified Row_ID I used the subquery that was created to find the duplicate data in a ‘delete from’ query to update the world_life_expectancy dataset.  This removed the three rows from the world_life_expectancy tables.  If something needs to be referenced or checked in the future, then I could use the world_life_expectancy_staging dataset which is my control table with unmodified data.
+
+![alt text](dulpcated_data_cleaning1.2.png)
+
+
+
+## ***Blanks and Nulls***
+
+In the dataset the ‘status’ column has blank cells that could affect any data derived from this set.  To identify blanks in the status column we will do a search where I use (status = ‘’) and not ‘null’ since there is nothing in the cell.
