@@ -40,3 +40,8 @@ Frist thing I did was to search for duplicates. I noticed that there were a few 
 
 
 Next, I needed to find the location to do duplicates and remove them from the dataset.  To find the location of the duplicates I used a subquery to find the ‘Row_ID’ column where the duplicated data was located.
+
+![alt text](dulpcated_data_cleaning1.1.png)
+
+
+To remove the identified Row_ID I used the subquery that was created to find the duplicate data in a ‘delete from’ query to update the world_life_expectancy dataset.  This removed the three rows from the world_life_expectancy tables.  If something needs to be referenced or checked in the future, then I could use the world_life_expectancy_staging dataset which is my control table with unmodified data.
