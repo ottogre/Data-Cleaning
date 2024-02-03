@@ -55,3 +55,5 @@ To remove the identified Row_ID I used the subquery that was created to find the
 ## ***Blanks and Nulls***
 
 In the dataset the ‘status’ column has blank cells that could affect any data derived from this set.  To identify blanks in the status column we will do a search where I use (status = ‘’) and not ‘null’ since there is nothing in the cell.
+
+![alt text](blanks_and_null_cleaning1.0.png)
