@@ -5,12 +5,12 @@ Demonstrating data cleaning using MySQL using WorldLifeExpectancy.csv.
 
 ### ***Project Overview***
 
-For this project, I wanted to demonstrate my ability to clean a dataset in MySQL.  The following will show that I understand how to clean data by searching for duplicates and removing them.  I will also show that I can make corrections that fill in blank or null data with appropriate data.  I will also show that I understand working with data and the need to keep a control dataset to compare to when updating information in the dataset.
+For this project, I wanted to demonstrate my ability to clean a dataset in MySQL. The following will show that I understand how to clean data by searching for duplicates and removing them. I will also show that I can make corrections that fill in blank or null data with appropriate data. I will also show that I understand working with data and the need to keep a control dataset to compare to when updating information in the dataset.
 
 
 ### ***Data***
 
-The data used for this project is “WorldLifeExpectancy.csv” file.  This dataset contains information for developing and developed nations around the world.  The dataset contains information spanning from 2007 – 2022.
+The data used for this project is “WorldLifeExpectancy.csv” file. This dataset contains information for developing and developed nations around the world. The dataset contains information spanning from 2007 – 2022.
 
 
 ### ***Tools***
@@ -27,6 +27,11 @@ Clean Data:
 
 ## ***Importing Data***
 
-To get started I Imported WorldLifeExpectancy.csv dataset to MySQL creating a schema named ‘world_life_expectancy.csv’.  Then I imported the WorldLifeExpectancy.csv as second time and listed it as world_life_expectancy_staging as a control table.
+To get started I Imported WorldLifeExpectancy.csv dataset to MySQL creating a schema named ‘world_life_expectancy.csv’. Then I imported the WorldLifeExpectancy.csv as second time and listed it as world_life_expectancy_staging as a control table.
 
-![alt text](image.jpg)
+![alt text](Dataset1.0.png)
+
+
+## ***Duplicates***
+
+Frist thing I did was to search for duplicates. I noticed that there were a few countries that had duplicate listing. The data did not appear to have unique data column to check for duplicates. I needed to create a unique column to find any data duplicates by country. To do so I combined columns ‘country’ and ‘year’ to create the unique ID needed to find any duplicates. Then counted the newly created column for any count above 1. The result was three countries have duplicate data Ireland in 2022, Senegal in 2009, and Zimbabwe in 2019.
