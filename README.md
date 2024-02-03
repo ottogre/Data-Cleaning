@@ -35,3 +35,8 @@ To get started I Imported WorldLifeExpectancy.csv dataset to MySQL creating a sc
 ## ***Duplicates***
 
 Frist thing I did was to search for duplicates. I noticed that there were a few countries that had duplicate listing. The data did not appear to have unique data column to check for duplicates. I needed to create a unique column to find any data duplicates by country. To do so I combined columns ‘country’ and ‘year’ to create the unique ID needed to find any duplicates. Then counted the newly created column for any count above 1. The result was three countries have duplicate data Ireland in 2022, Senegal in 2009, and Zimbabwe in 2019.
+
+![alt text](dulpcated_data_cleaning1.0.png)
+
+
+Next, I needed to find the location to do duplicates and remove them from the dataset.  To find the location of the duplicates I used a subquery to find the ‘Row_ID’ column where the duplicated data was located.
