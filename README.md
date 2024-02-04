@@ -59,6 +59,10 @@ In the dataset the ‘status’ column has blank cells that could affect any dat
 ![alt text](blanks_and_null_cleaning1.0.png)
 
 
-To check what unique status is listed in the ‘status’ column before making any changes to the blank cells.  This will help ensure data coherency and if there are any other discrepancies in the data that need to be addressed.  As we see there are only two types ‘developing’ and ‘developed’ listed under the ‘status’ column.
+To check what unique status is listed in the ‘status’ column before making any changes to the blank cells. This will help ensure data coherency and if there are any other discrepancies in the data that need to be addressed. As we see there are only two types ‘developing’ and ‘developed’ listed under the ‘status’ column.
 
 ![alt text](blanks_and_null_cleaning1.1.png)
+
+I needed to update the blank cells with the correct data. To do this I needed to create a join to itself. This was the only way that I could use the data to fill the blanks. Doing a simple update to fill in the blanks would not be possible. It would not know how to pull the correct data. The work around is to create a join to itself so you can pull the data from the second table to fill the first table with the correct corresponding data.
+
+![alt text](blanks_and_null_cleaning1.2.png)
