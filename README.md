@@ -96,3 +96,4 @@ Clean Data:
   At this point of working with the data we are wanting to run types or queries to ensure that the data is clean to the point we can use. With this dataset we find that there may be data quality issues when we look for the minimum and max life expectancy of each country where several countries have 0 in data used.
 
 
+![alt text](exploratory_data_analysis1.0.png)
