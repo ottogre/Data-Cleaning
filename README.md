@@ -83,5 +83,11 @@ Clean Data:
   This concludes the initial data cleaning. Dataset cleaning can consist of many things. For our reasons with this dataset cleaning has finished. There still may be areas that need to be cleaned as we discover doing the exploratory phase. Also, when given a dataset and goals to meet the shareholder could want certain things correct such as renaming the column heads to match or to create new data using what is available in the dataset. Each project will have different goals to achieve based off the stakeholder’s goals.
 
   Below is a before and after of the dataset I worked with. The ‘Before’ is pulled from the control dataset that was not altered and the ‘after’ is pulled from the altered dataset.
-  
-![alt text](before)                         ![alt text](after)
+                    
+![alt text](before.png)
+
+![alt text](after.png)
+
+
+
+## ***Exploratory Data Analysis***
