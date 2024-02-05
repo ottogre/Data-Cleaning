@@ -95,5 +95,28 @@ Clean Data:
 
   At this point of working with the data we are wanting to run types or queries to ensure that the data is clean to the point we can use. With this dataset we find that there may be data quality issues when we look for the minimum and max life expectancy of each country where several countries have 0 in data used.
 
-
 ![alt text](exploratory_data_analysis1.0.png)
+
+
+  After we determine that the 0 in the data are issues that we may not be able to resolve then we can filter the 0 our so that the data does not add to the data we want to use.
+
+![alt text](exploratory_data_analysis1.1.png)
+
+
+  I then wanted to look at the life expectancy increase over the last 15 years from the data set to ensure that we would not need to change or update other data as.
+
+![alt text](exploratory_data_analysis1.2.png)
+
+
+  I wanted to find the average life expectancy of the world by year. We ran two queries for the average. The first we ran all the data in the query including the data that had 0. Then we wanted to check to ensure that the 0 data did not affect the outcome, so I filtered the data that was 0 out. As you can see there appears to be no change in the data in this case in the images below.
+
+![alt text](exploratory_data_analysis1.3.png)
+
+![alt text](exploratory_data_analysis1.4.png)
+
+
+  Next, I wanted to investigate if there was a correlation between the average GDP and the average life expectancy of a country. As we found earlier there are several 0 in the data with life expectancy.  We now find that there is 0 in the GDP. This could be due to the country size that we do not have their GDP.  This would be a question for the stakeholders or project manager to find out if we need to correct the number. For this purpose, I will filter out the data that is 0.  According to the queries conducted there is a correlation between high and low GDP and life expectancy rates as you can see in the images below.
+
+  ![alt text](exploratory_data_analysis1.6.png)
+
+  ![alt text](exploratory_data_analysis1.7.png)
