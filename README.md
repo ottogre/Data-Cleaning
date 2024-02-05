@@ -26,6 +26,19 @@ Clean Data:
 
 
 
+### ***Table of Contents***
+  - [***Importing Data***](#importing-data)
+
+  - [***Duplicates***](#duplicates)
+    
+  - [***Blanks and Nulls***](#blanks-and-nulls)
+    
+  - [***Before and After Cleaning***](#before-and-after-cleaning)
+    
+  - [***Exploratory Data Analysis***](#exploratory-data-analysis)
+  
+
+
 ## ***Importing Data***
 
   To get started I Imported WorldLifeExpectancy.csv dataset to MySQL creating a schema named ‘world_life_expectancy.csv’. Then I imported the WorldLifeExpectancy.csv as second time and listed it as world_life_expectancy_staging as a control table.
