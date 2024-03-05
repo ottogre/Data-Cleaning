@@ -5,7 +5,7 @@
 
 ### ***Project Overview***
 
-  For this project, I wanted to demonstrate my ability to clean a dataset in MySQL. The following will show that I understand how to clean data by searching for duplicates and removing them. I will also show that I can make corrections that fill in blank or null data with appropriate data. I will also show that I understand working with data and the need to keep a control dataset to compare to when updating information in the dataset.
+  For this project, I wanted to demonstrate my ability to clean a dataset in MySQL and that I understand the need to keep a control dataset to compare to when updating information in the dataset.  I will demonstrate how to search for and remove duplicate entries. I will also make corrections to the data that fill in blank or null values with appropriate data. 
 
 
 ### ***Data***
@@ -16,14 +16,15 @@
 ### ***Tools***
 
 MySQL
-  - Used to clean data and do a exploratory data analysis.
+  - Used to clean data and do an exploratory data analysis.
 
 
 ### ***Goals***
 
 Clean Data:
-  - Show an understanding of looking for and correcting errors in the dataset.
-
+  - Show an understanding of best practices in establishing a control dataset prior to manipulating the data.
+  - Show an understanding of how to search for and correct multiple types of errors in the dataset.
+  - Show an understanding of how to use queries on the data to identify unexpected results which could indicate data consistency issues.
 
 
 ### ***Table of Contents***
@@ -41,7 +42,7 @@ Clean Data:
 
 ## ***Importing Data***
 
-  To get started I Imported WorldLifeExpectancy.csv dataset to MySQL creating a schema named ‘world_life_expectancy.csv’. Then I imported the WorldLifeExpectancy.csv as second time and listed it as world_life_expectancy_staging as a control table.
+  To get started I imported WorldLifeExpectancy.csv dataset to MySQL creating a schema named ‘world_life_expectancy.csv’. Then I imported the WorldLifeExpectancy.csv a second time and listed it as world_life_expectancy_staging as a control table.
 
 ![alt text](Dataset1.0.png)
 
@@ -106,12 +107,12 @@ Clean Data:
 ## ***Exploratory Data Analysis***
 
 
-  At this point of working with the data we are wanting to run types or queries to ensure that the data is clean to the point we can use. With this dataset we find that there may be data quality issues when we look for the minimum and maximum life expectancy of each country where several countries have 0 in data used.
+  At this point of working with the data we want to run queries to ensure that the data is clean to the point we can use. With this dataset we find that there may be data quality issues when we look for the minimum and maximum life expectancy of each country where several countries have 0 in the dataset.
 
 ![alt text](exploratory_data_analysis1.0.png)
 
 
-  After we determine that the 0 in the data are issues that we may not be able to resolve, then we can filter the 0 out so that the data does not add to the data we want to use.
+  Once we determine that the 0's in the data are issues that we are not be able to resolve, we can filter the 0 out so that the data does not add to the data we want to use.
 
 ![alt text](exploratory_data_analysis1.1.png)
 
